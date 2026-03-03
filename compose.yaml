@@ -1,0 +1,23 @@
+networks:
+  debox:
+
+services:
+  debox:
+    container_name: debox
+    build: .
+    restart: unless-stopped
+    networks:
+      - debox
+    ports:
+      - 4242:22
+    volumes:
+      - ./nvim:/root/.config/nvim
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+        max-file: "1"
+    deploy:
+      resources:
+        limits:
+          memory: 50M
