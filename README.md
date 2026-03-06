@@ -4,10 +4,10 @@ Debian container for tinkering
 
 ## Usage
 
-### Compose File
-
 > [!NOTE]
 > Change the root password in `.env` if the box is exposed to the network.
+
+### Compose File
 
 Clone the repository and run the following commands:
 
