@@ -5,6 +5,7 @@ services:
   debox:
     container_name: debox
     build: .
+    image: ghcr.io/cybardev/debox:latest
     restart: unless-stopped
     networks:
       - debox
