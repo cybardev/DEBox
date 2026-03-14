@@ -1,4 +1,4 @@
-FROM debian:13
+FROM debian:13-slim
 
 RUN apt update && apt install -y bash tree fping openssh-server git neovim python3 python3-venv
 
