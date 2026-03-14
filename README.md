@@ -47,9 +47,9 @@ echo ROOT_PASSWORD=toor > .env
 
 docker run \
   -it \
-  -w /root \
   --env-file .env \
   -m 50MB \
+  -w /root \
   --name debox \
   ghcr.io/cybardev/debox:latest \
   bash
